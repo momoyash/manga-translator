@@ -1,0 +1,42 @@
+# Environment
+.env
+
+# Models (too large for git — download separately)
+models/*.onnx
+models/*.pt
+models/*.pth
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+
+# Sibling folder engine (not needed when using bundled tl-core/)
+manga-image-translator/
+
+# Engine model cache (downloaded at runtime)
+tl-core/models/
+tl-core/result/
+tl-core/**/__pycache__/
+
+# Output & local manga (except examples)
+output/
+result/
+translated/
+manga/
+manga-temp/
+test-run/
+tmp-*/
+!assets/examples/output/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini

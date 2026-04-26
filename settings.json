@@ -1,0 +1,26 @@
+{
+  "translator": {
+    "translator": "deepl",
+    "target_lang": "ENG"
+  },
+  "detector": {
+    "detector": "ensemble",
+    "detection_size": 2048,
+    "text_threshold": 0.25
+  },
+  "ocr": {
+    "min_text_length": 1,
+    "ignore_bubble": false
+  },
+  "render": {
+    "renderer": "manga2eng_pillow",
+    "font_size_offset": -3,
+    "font_size_minimum": 9,
+    "uppercase": true,
+    "line_spacing": 0
+  },
+  "inpainter": {
+    "inpainter": "lama_large",
+    "inpainting_size": 2048
+  }
+}

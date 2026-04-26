@@ -1,0 +1,8 @@
+# Core dependencies
+python-dotenv>=1.0.0
+numpy>=1.24.0
+opencv-python>=4.8.0
+onnxruntime>=1.16.0
+
+# Optional: GPU support (install separately if needed)
+# onnxruntime-gpu>=1.16.0
