@@ -42,9 +42,11 @@ Translate manga pages from Japanese to English using AI. Point it at a folder, g
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/momoyash/manga-translator.git
+git clone --recurse-submodules https://github.com/momoyash/manga-translator.git
 cd manga-translator
 ```
+
+> **Note:** The `--recurse-submodules` flag is required to pull in the translation engine (`tl-core`). If you already cloned without it, run `git submodule update --init --recursive` inside the repo.
 
 ### 2. Run setup
 

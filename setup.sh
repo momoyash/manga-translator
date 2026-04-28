@@ -1,8 +1,14 @@
 #!/bin/bash
+set -e
+
 echo "========================================"
 echo "  MangaTL Setup"
 echo "========================================"
 echo
+
+# Initialize submodule if not already done
+echo "Initializing translation engine submodule..."
+git submodule update --init --recursive
 
 # Install engine dependencies
 echo

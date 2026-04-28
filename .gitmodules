@@ -1,0 +1,3 @@
+[submodule "tl-core"]
+	path = tl-core
+	url = https://github.com/zyddnys/manga-image-translator

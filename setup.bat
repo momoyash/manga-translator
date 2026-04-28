@@ -4,6 +4,15 @@ echo   MangaTL Setup
 echo ========================================
 echo.
 
+REM Initialize submodule if not already done
+echo Initializing translation engine submodule...
+git submodule update --init --recursive
+if errorlevel 1 (
+    echo ERROR: Failed to initialize submodule. Make sure you have internet access.
+    pause
+    exit /b 1
+)
+
 REM Install engine dependencies
 echo.
 echo Installing engine dependencies...
